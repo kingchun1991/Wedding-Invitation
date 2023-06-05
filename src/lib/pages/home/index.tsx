@@ -22,16 +22,12 @@ const Home = () => {
       <Image src="/main.png" alt="Main" title="Main" />
       <SomeImage />
       <iframe
-        width="700"
-        height="500"
-        src="https://www.openstreetmap.org/export/embed.html?bbox=114.17203009128572%2C22.29408722838851%2C114.17338460683824%2C22.29636045705171&amp;layer=mapnik&amp;marker=22.295223847342772%2C114.17270869016647"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1557.2907178707221!2d114.17259507595556!3d22.294829666899947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400f225501327%3A0x30f68dbd767b8da4!2sSheraton%20Hong%20Kong%20Hotel%20And%20Towers%2C%20Nathan%20Rd%2C%20Tsim%20Sha%20Tsui!5e0!3m2!1sen!2shk!4v1685975868110!5m2!1sen!2shk"
+        width="600"
+        height="450"
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
       />
-      <br />
-      <small>
-        <a href="https://www.openstreetmap.org/?mlat=22.29522&amp;mlon=114.17271#map=19/22.29522/114.17271">
-          View Larger Map
-        </a>
-      </small>
       {/* <CTASection /> */}
     </Flex>
   );
