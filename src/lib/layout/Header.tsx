@@ -1,4 +1,4 @@
-import { Box, Flex, Heading } from '@chakra-ui/react';
+import { Box, Flex } from '@chakra-ui/react';
 
 import CountdownTimer from './CountdownTimer';
 import ThemeToggle from './ThemeToggle';
