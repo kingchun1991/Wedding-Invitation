@@ -14,9 +14,6 @@ const Header = () => {
   return (
     <Flex as="header" width="full" align="center">
       <CountdownTimer targetDate={targetDate} />
-      <Heading as="h1" size="md">
-        Waiwai & Frank
-      </Heading>
       <Box marginLeft="auto">
         <ThemeToggle />
       </Box>
