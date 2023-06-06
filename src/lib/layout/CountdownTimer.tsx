@@ -52,7 +52,7 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
   return (
     <Box marginRight="auto">
       <Box>
-        <StatGroup gap={8}>
+        <StatGroup gap={4}>
           <Stat>
             <StatNumber>{timeRemaining.days}</StatNumber>
             <StatHelpText>days</StatHelpText>
