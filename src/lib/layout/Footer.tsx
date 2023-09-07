@@ -4,9 +4,13 @@ const Footer = () => {
   return (
     <Flex as="footer" width="full" justifyContent="center">
       <Text fontSize="sm">
-        {new Date().getFullYear()} -{' '}
-        <Link href="https://sznm.dev" isExternal rel="noopener noreferrer">
-          sznm.dev
+        {new Date('2023-11-11').toDateString()} -{' '}
+        <Link
+          href="https://wedding-invitation-orpin.vercel.app/"
+          isExternal
+          rel="noopener noreferrer"
+        >
+          Waiwai & Frank
         </Link>
       </Text>
     </Flex>

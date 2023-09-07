@@ -1,9 +1,10 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
+
+'use client';
+
 import { Flex, Image } from '@chakra-ui/react';
 import { AddToCalendarButton } from 'add-to-calendar-button-react';
-import { NextSeo } from 'next-seo';
 
-// import CTASection from '~/lib/components/samples/CTASection';
 import SomeImage from '~/lib/components/samples/SomeImage';
 import SomeText from '~/lib/components/samples/SomeText';
 
@@ -18,7 +19,6 @@ const Home = () => {
       mb={8}
       w="full"
     >
-      <NextSeo title="Home" />
       <SomeText />
       <Image src="/main.png" alt="Main" title="Main" />
       <SomeImage />
@@ -39,7 +39,6 @@ const Home = () => {
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
       />
-      {/* <CTASection /> */}
     </Flex>
   );
 };
