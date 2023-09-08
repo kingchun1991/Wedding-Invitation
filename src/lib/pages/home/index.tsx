@@ -25,7 +25,7 @@ const Home = () => {
           Venue
         </Heading>
         <Text fontSize="md" mb={1}>
-          3/F, Grand ballroom
+          3/F, GRAND BALLROOM
         </Text>
         <Text fontSize="md" mb={1}>
           SHERATON HONG KONG HOTEL & TOWERS
