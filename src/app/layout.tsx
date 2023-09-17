@@ -9,12 +9,14 @@ type RootLayoutProps = {
 
 const APP_NAME = 'Waiwai & Frank Wedding Invitation';
 
+const description = 'Save the date: 11 Nov 2023';
+
 export const metadata: Metadata = {
   title: {
     default: APP_NAME,
     template: '%s | Waiwai & Frank Wedding Invitation',
   },
-  description: 'Save the date: 11 Nov 2023',
+  description: `${description}`,
   viewport: {
     width: 'device-width',
     initialScale: 1,
@@ -32,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     url: 'https://wedding-invitation-orpin.vercel.app/',
     title: 'Waiwai & Frank Wedding Invitation',
-    description: 'Save the date: 11 Nov 2023',
+    description: `${description}`,
     images: {
       url: 'https://wedding-invitation-orpin.vercel.app/main.png',
       alt: 'Waiwai & Frank Wedding og-image',
@@ -41,6 +43,8 @@ export const metadata: Metadata = {
   twitter: {
     creator: '@frank',
     card: 'summary_large_image',
+    description: `${description}`,
+    images: ['https://wedding-invitation-orpin.vercel.app/main.png'],
   },
 };
 
