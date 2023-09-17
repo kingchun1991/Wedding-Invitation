@@ -7,11 +7,14 @@ type RootLayoutProps = {
   children: React.ReactNode;
 };
 
-const APP_NAME = 'nextarter-chakra';
+const APP_NAME = 'Waiwai & Frank Wedding Invitation';
 
 export const metadata: Metadata = {
-  title: { default: APP_NAME, template: '%s | nextarter-chakra' },
-  description: 'Next.js + chakra-ui + TypeScript template',
+  title: {
+    default: APP_NAME,
+    template: '%s | Waiwai & Frank Wedding Invitation',
+  },
+  description: 'Save the date: 11 Nov 2023',
   viewport: {
     width: 'device-width',
     initialScale: 1,
@@ -27,16 +30,16 @@ export const metadata: Metadata = {
   },
   themeColor: '#FFFFFF',
   openGraph: {
-    url: 'https://nextarter-chakra.sznm.dev',
-    title: 'nextarter-chakra',
-    description: 'Next.js + chakra-ui + TypeScript template',
+    url: 'https://wedding-invitation-orpin.vercel.app/',
+    title: 'Waiwai & Frank Wedding Invitation',
+    description: 'Save the date: 11 Nov 2023',
     images: {
-      url: 'https://og-image.sznm.dev/**nextarter-chakra**.sznm.dev.png?theme=dark&md=1&fontSize=125px&images=https%3A%2F%2Fsznm.dev%2Favataaars.svg&widths=250',
-      alt: 'nextarter-chakra.sznm.dev og-image',
+      url: 'https://wedding-invitation-orpin.vercel.app/main.png',
+      alt: 'Waiwai & Frank Wedding og-image',
     },
   },
   twitter: {
-    creator: '@sozonome',
+    creator: '@frank',
     card: 'summary_large_image',
   },
 };
