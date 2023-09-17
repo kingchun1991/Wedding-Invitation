@@ -2,10 +2,11 @@
 
 'use client';
 
-import { Flex, Image, Text, Box, Heading } from '@chakra-ui/react';
+import { Flex, Image } from '@chakra-ui/react';
 import { AddToCalendarButton } from 'add-to-calendar-button-react';
 
 import SomeText from '~/lib/components/samples/SomeText';
+import Timeline from '~/lib/components/Timeline';
 
 const Home = () => {
   return (
@@ -20,7 +21,8 @@ const Home = () => {
     >
       <SomeText />
       <Image src="/main.png" alt="Main" title="Main" />
-      <Box>
+      <Timeline />
+      {/* <Box>
         <Heading size="md" mb={2}>
           Venue
         </Heading>
@@ -43,7 +45,7 @@ const Home = () => {
         <Text fontSize="md" mb={1}>
           香港喜来登酒店 3樓宴會大廳
         </Text>
-      </Box>
+      </Box> */}
 
       <AddToCalendarButton
         name="Waiwai and Frank's Wedding"
