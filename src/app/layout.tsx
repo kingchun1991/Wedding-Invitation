@@ -35,20 +35,31 @@ export const metadata: Metadata = {
     url: 'https://wedding-invitation-orpin.vercel.app/',
     title: 'Waiwai & Frank Wedding Invitation',
     description: `${description}`,
-    images: {
-      url: 'https://wedding-invitation-orpin.vercel.app/api/og',
-      alt: 'Waiwai & Frank Wedding og-image',
-      type: 'png',
-    },
+    images: [
+      {
+        url: 'https://wedding-invitation-orpin.vercel.app/main.png',
+        alt: 'Waiwai & Frank Wedding png-image',
+      },
+      {
+        url: 'https://wedding-invitation-orpin.vercel.app/api/og',
+        alt: 'Waiwai & Frank Wedding og-image',
+      },
+    ],
   },
   twitter: {
     creator: '@frank',
     card: 'summary_large_image',
     description: `${description}`,
-    images: {
-      url: 'https://wedding-invitation-orpin.vercel.app/api/og',
-      type: 'png',
-    },
+    images: [
+      {
+        url: 'https://wedding-invitation-orpin.vercel.app/main.png',
+        alt: 'Waiwai & Frank Wedding png-image',
+      },
+      {
+        url: 'https://wedding-invitation-orpin.vercel.app/api/og',
+        alt: 'Waiwai & Frank Wedding og-image',
+      },
+    ],
   },
 };
 
