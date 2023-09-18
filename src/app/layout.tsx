@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     description: `${description}`,
     images: {
-      url: 'https://wedding-invitation-orpin.vercel.app/api/og',
+      url: 'https://wedding-invitation-orpin.vercel.app/main.png',
     },
   },
 };
