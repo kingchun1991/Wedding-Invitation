@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     title: 'Waiwai & Frank Wedding Invitation',
     description: `${description}`,
     images: {
-      url: 'https://www.canva.com/design/DAFk3coGg6g/vFopk_K53oEUoP4CKuoK0w/view?website#2',
+      url: 'https://wedding-invitation-orpin.vercel.app/api/og',
       alt: 'Waiwai & Frank Wedding og-image',
     },
   },
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     description: `${description}`,
     images: {
-      url: 'https://www.canva.com/design/DAFk3coGg6g/vFopk_K53oEUoP4CKuoK0w/view?website#2',
+      url: 'https://wedding-invitation-orpin.vercel.app/api/og',
     },
   },
 };
