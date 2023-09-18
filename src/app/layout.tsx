@@ -38,6 +38,7 @@ export const metadata: Metadata = {
     images: {
       url: 'https://wedding-invitation-orpin.vercel.app/main.png',
       alt: 'Waiwai & Frank Wedding og-image',
+      type: 'png',
     },
   },
   twitter: {
