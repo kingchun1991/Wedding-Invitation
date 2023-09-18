@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     title: 'Waiwai & Frank Wedding Invitation',
     description: `${description}`,
     images: {
-      url: 'https://og-image.sznm.dev/DevUtils101.png?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fhyper-color-logo.svg',
+      url: 'https://wedding-invitation-orpin.vercel.app/api/og',
       alt: 'Waiwai & Frank Wedding og-image',
     },
   },
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     description: `${description}`,
     images: {
-      url: 'https://og-image.sznm.dev/DevUtils101.png?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fhyper-color-logo.svg',
+      url: 'https://wedding-invitation-orpin.vercel.app/api/og',
     },
   },
 };
