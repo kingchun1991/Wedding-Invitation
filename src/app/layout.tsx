@@ -47,6 +47,7 @@ export const metadata: Metadata = {
     description: `${description}`,
     images: {
       url: 'https://wedding-invitation-orpin.vercel.app/api/og',
+      type: 'png',
     },
   },
 };
