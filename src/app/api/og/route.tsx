@@ -8,7 +8,7 @@ import { ImageResponse } from 'next/server';
 export const runtime = 'edge';
 
 export async function GET() {
-  const image = (await fetch(new URL('./main.png', import.meta.url)).then(
+  const image = (await fetch(new URL('./main.jpg', import.meta.url)).then(
     (res) => res.arrayBuffer()
   )) as string;
   try {
