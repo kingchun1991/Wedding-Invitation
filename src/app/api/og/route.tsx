@@ -1,5 +1,3 @@
-/* eslint-disable react/no-unknown-property */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable @next/next/no-img-element */
 import { ImageResponse } from 'next/server';
 // App router includes @vercel/og.
@@ -10,14 +8,15 @@ import { ImageResponse } from 'next/server';
 export const runtime = 'edge';
 
 export async function GET() {
+  const image = (await fetch(new URL('./main.png', import.meta.url)).then(
+    (res) => res.arrayBuffer()
+  )) as string;
   try {
     return new ImageResponse(
       (
         <div
           style={{
             display: 'flex',
-            fontSize: 60,
-            color: 'black',
             background: '#f6f6f6',
             width: '100%',
             height: '100%',
@@ -26,10 +25,7 @@ export async function GET() {
             alignItems: 'center',
           }}
         >
-          <img
-            src="https://wedding-invitation-orpin.vercel.app/main.png"
-            alt="main"
-          />
+          <img src={image} alt="main" />
         </div>
       ),
       {
