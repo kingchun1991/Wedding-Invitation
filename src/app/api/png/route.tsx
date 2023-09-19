@@ -19,8 +19,8 @@ export async function GET() {
             fontSize: 60,
             color: 'black',
             background: '#f6f6f6',
-            width: '100%',
-            height: '100%',
+            width: '50%',
+            height: '50%',
             flexDirection: 'column',
             justifyContent: 'center',
             alignItems: 'center',
@@ -33,8 +33,8 @@ export async function GET() {
         </div>
       ),
       {
-        width: 1200,
-        height: 800,
+        width: 1000,
+        height: 714,
       }
     );
   } catch (err) {
