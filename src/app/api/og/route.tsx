@@ -9,6 +9,8 @@ import { ImageResponse } from 'next/server';
 
 export const runtime = 'edge';
 
+export const alt = 'main';
+
 export async function GET() {
   try {
     return new ImageResponse(
@@ -33,8 +35,8 @@ export async function GET() {
         </div>
       ),
       {
-        width: 1200,
-        height: 800,
+        width: 2000,
+        height: 1428,
       }
     );
   } catch (err) {
