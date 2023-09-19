@@ -9,8 +9,6 @@ import { ImageResponse } from 'next/server';
 
 export const runtime = 'edge';
 
-export const alt = 'main';
-
 export async function GET() {
   try {
     return new ImageResponse(
