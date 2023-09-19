@@ -33,8 +33,8 @@ export async function GET() {
         </div>
       ),
       {
-        width: 2000,
-        height: 1428,
+        width: 1200,
+        height: 800,
       }
     );
   } catch (err) {
