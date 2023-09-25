@@ -19,7 +19,7 @@ const Rundown = () => {
     >
       <iframe
         className="airtable-embed"
-        src="https://airtable.com/embed/appkoYwkZGpcKk5Cr/shruOOxgemRzfGGJR?backgroundColor=grayDusty&viewControls=on&layout=grid"
+        src="https://airtable.com/embed/appkoYwkZGpcKk5Cr/shruOOxgemRzfGGJR?backgroundColor=grayDusty&viewControls=on"
         width="100%"
         height="533"
       />
