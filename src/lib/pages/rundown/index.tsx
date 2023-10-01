@@ -1,30 +1,21 @@
-/* eslint-disable react/style-prop-object */
-/* eslint-disable react/no-unknown-property */
-/* eslint-disable jsx-a11y/iframe-has-title */
+/* eslint-disable @next/next/no-async-client-component */
 
 'use client';
 
-import { Flex } from '@chakra-ui/react';
+import RundownTimeline from '~/lib/components/RundownTimeline';
+import type { IEvent } from '~/lib/types/event';
 
-const Rundown = () => {
-  return (
-    <Flex
-      direction="column"
-      alignItems="center"
-      justifyContent="center"
-      minHeight="70vh"
-      gap={4}
-      mb={8}
-      w="full"
-    >
-      <iframe
-        className="airtable-embed"
-        src="https://airtable.com/embed/appkoYwkZGpcKk5Cr/shruOOxgemRzfGGJR?backgroundColor=grayDusty&viewControls=on"
-        width="100%"
-        height="533"
-      />
-    </Flex>
-  );
+async function getData() {
+  const dataModule = await import('~/../data/data.json');
+  // const companyDataModule = await import('~/../data/companyInfo.json');
+  const jobs: IEvent[] = dataModule.default;
+  // const companys: ICompanyInfo[] = companyDataModule.default;
+  return jobs;
+}
+
+const Rundown = async () => {
+  const events = (await getData()) as IEvent[];
+  return <RundownTimeline events={events} />;
 };
 
 export default Rundown;

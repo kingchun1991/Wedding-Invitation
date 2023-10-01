@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import Rundown from '~/lib/pages/rundown';
 
 export const metadata: Metadata = {
-  title: 'rundown',
+  title: 'Rundown',
   description: 'Rundown on 11 Nov 2023',
 };
 
