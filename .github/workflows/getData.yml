@@ -17,6 +17,15 @@ jobs:
         run: |-
           curl -L -o data.csv "https://docs.google.com/spreadsheets/d/e/2PACX-1vQk-ywyl8AsCBz0L6_eMvIOVbIpYWh-aRv-l2a2riubpXYiH-0Nbv2nqE1c7Fs5YwNg-VjlZVFk3qdC/pubhtml?gid=970624538&single=true&output=csv&headers=0&range=A2:ZZ"
 
+      - name: Commit and push if the data has changed
+        run: |-
+          git config user.name "Automated"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          timestamp=$(TZ='Asia/Hong_Kong' date)
+          git commit -m "Latest data: ${timestamp}" || exit 0
+          git push
+
       - name: Discord notification
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
