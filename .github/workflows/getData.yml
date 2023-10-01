@@ -13,9 +13,15 @@ jobs:
         with:
           token: ${{ secrets.PAT }}
 
-      - name: Download companyInfo
+      - name: Download csv
         run: |-
           curl --location 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQk-ywyl8AsCBz0L6_eMvIOVbIpYWh-aRv-l2a2riubpXYiH-0Nbv2nqE1c7Fs5YwNg-VjlZVFk3qdC/pub?gid=970624538&single=true&output=csv&headers=0&range=A2%3AZZ' > data/data.csv
+
+      - name: Convert CSV to JSON
+        run: |
+          npm install -g csvtojson
+          csvtojson data/data.csv > data/data.json
+
       - name: Commit and push if the data has changed
         run: |-
           git config user.name "Automated"
