@@ -1,160 +1,115 @@
-/* eslint-disable radix */
-/* eslint-disable react/no-array-index-key */
+/* eslint-disable no-restricted-syntax */
 import {
-  Accordion,
   AccordionButton,
   AccordionIcon,
   AccordionItem,
   AccordionPanel,
+  Badge,
   Box,
+  Stack,
   Step,
   StepDescription,
   StepIndicator,
-  // StepNumber,
   StepSeparator,
   StepStatus,
   StepTitle,
   Stepper,
   useSteps,
 } from '@chakra-ui/react';
-// import { MdCheck } from 'react-icons/md';
 
 import type { IEvent } from '../types/event';
 
-const RundownTimeline = ({ events }: { events: IEvent[] }) => {
-  const displayEvents: IEvent[] = events.filter(
-    (event) => event.Description !== undefined && event.Description !== ''
-  );
-  const morningEvents: IEvent[] = displayEvents.filter((event) => {
-    const fromTime = parseInt(event.From.split(':')[0]);
-    return fromTime >= 4 && fromTime < 12;
-  });
+function renderBadges(data: IEvent) {
+  const badges = [];
 
-  const afternoonEvents: IEvent[] = displayEvents.filter((event) => {
-    const fromTime = parseInt(event.From.split(':')[0]);
-    return fromTime >= 12 && fromTime < 18;
-  });
+  if (!data) {
+    // Render a message or component for no data
+    return <p>No data available</p>; // Replace with your desired component
+  }
 
-  const eveningEvents: IEvent[] = displayEvents.filter((event) => {
-    const fromTime = parseInt(event.From.split(':')[0]);
-    return fromTime >= 18 && fromTime <= 23;
-  });
+  if (data.新郎 !== '') {
+    badges.push(<Badge colorScheme="blue">新郎</Badge>);
+  }
 
+  if (data.新娘 !== '') {
+    badges.push(<Badge colorScheme="red">新娘</Badge>);
+  }
+
+  if (data.姊妹 !== '') {
+    badges.push(<Badge colorScheme="pink">姊妹</Badge>);
+  }
+
+  if (data.兄弟 !== '') {
+    badges.push(<Badge colorScheme="cyan">兄弟</Badge>);
+  }
+
+  if (data.Crew !== '') {
+    badges.push(<Badge colorScheme="green">Crew</Badge>);
+  }
+
+  if (data.四大長老 !== '') {
+    badges.push(<Badge colorScheme="orange">四大長老</Badge>);
+  }
+
+  if (badges.length === 0) {
+    // Render a message or component if no badges are to be shown
+    return <p>No badges available</p>; // Replace with your desired component
+  }
+
+  return <Stack direction="row">{badges}</Stack>;
+}
+
+const RundownTimeline = ({
+  title,
+  index,
+  events,
+}: {
+  title: string;
+  index: number;
+  events: IEvent[];
+}) => {
   const { activeStep } = useSteps({
-    index: 1,
-    count: displayEvents.length,
+    index,
+    count: events.length,
   });
 
   return (
-    <Accordion allowToggle>
-      <AccordionItem>
-        <h2>
-          <AccordionButton>
-            <Box as="span" flex="1" textAlign="left">
-              Morning
-            </Box>
-            <AccordionIcon />
-          </AccordionButton>
-        </h2>
-        <AccordionPanel pb={4}>
-          <Stepper size="lg" index={activeStep} orientation="vertical" gap="0">
-            {morningEvents.map((event) => (
-              <Step key={event.ID}>
-                <StepIndicator>
-                  <StepStatus
-                    complete={event.From}
-                    incomplete={event.From}
-                    active={event.From}
-                  />
-                </StepIndicator>
+    <AccordionItem>
+      <h2>
+        <AccordionButton>
+          <Box as="span" flex="1" textAlign="left">
+            {title}
+          </Box>
+          <AccordionIcon />
+        </AccordionButton>
+      </h2>
+      <AccordionPanel pb={4}>
+        <Stepper size="lg" index={activeStep} orientation="vertical" gap="0">
+          {events.map((event) => (
+            <Step key={event.ID}>
+              <StepIndicator>
+                <StepStatus
+                  complete={event.From}
+                  incomplete={event.From}
+                  active={event.From}
+                />
+              </StepIndicator>
 
-                <Box flexShrink="0">
-                  <StepTitle
-                    style={{ whiteSpace: 'pre-line' }}
-                    dangerouslySetInnerHTML={{ __html: event.Description }}
-                  />
-                  <StepDescription>{event.Location}</StepDescription>
-                </Box>
+              <Box flexShrink="0">
+                <StepTitle
+                  style={{ whiteSpace: 'pre-line' }}
+                  dangerouslySetInnerHTML={{ __html: event.Description }}
+                />
+                <StepDescription>{event.Location}</StepDescription>
+                {renderBadges(event)}
+              </Box>
 
-                <StepSeparator />
-              </Step>
-            ))}
-          </Stepper>
-        </AccordionPanel>
-      </AccordionItem>
-      {/* //afternoonEvents */}
-      <AccordionItem>
-        <h2>
-          <AccordionButton>
-            <Box as="span" flex="1" textAlign="left">
-              Afternoon
-            </Box>
-            <AccordionIcon />
-          </AccordionButton>
-        </h2>
-        <AccordionPanel pb={4}>
-          <Stepper size="lg" index={activeStep} orientation="vertical" gap="0">
-            {afternoonEvents.map((event) => (
-              <Step key={event.ID}>
-                <StepIndicator>
-                  <StepStatus
-                    complete={event.From}
-                    incomplete={event.From}
-                    active={event.From}
-                  />
-                </StepIndicator>
-
-                <Box flexShrink="0">
-                  <StepTitle
-                    style={{ whiteSpace: 'pre-line' }}
-                    dangerouslySetInnerHTML={{ __html: event.Description }}
-                  />
-                  <StepDescription>{event.Location}</StepDescription>
-                </Box>
-
-                <StepSeparator />
-              </Step>
-            ))}
-          </Stepper>
-        </AccordionPanel>
-      </AccordionItem>
-      {/* //eveningEvents */}
-      <AccordionItem>
-        <h2>
-          <AccordionButton>
-            <Box as="span" flex="1" textAlign="left">
-              Evening
-            </Box>
-            <AccordionIcon />
-          </AccordionButton>
-        </h2>
-        <AccordionPanel pb={4}>
-          <Stepper size="lg" index={activeStep} orientation="vertical" gap="0">
-            {eveningEvents.map((event) => (
-              <Step key={event.ID}>
-                <StepIndicator>
-                  <StepStatus
-                    complete={event.From}
-                    incomplete={event.From}
-                    active={event.From}
-                  />
-                </StepIndicator>
-
-                <Box flexShrink="0">
-                  <StepTitle
-                    style={{ whiteSpace: 'pre-line' }}
-                    dangerouslySetInnerHTML={{ __html: event.Description }}
-                  />
-                  <StepDescription>{event.Location}</StepDescription>
-                </Box>
-
-                <StepSeparator />
-              </Step>
-            ))}
-          </Stepper>
-        </AccordionPanel>
-      </AccordionItem>
-    </Accordion>
+              <StepSeparator />
+            </Step>
+          ))}
+        </Stepper>
+      </AccordionPanel>
+    </AccordionItem>
   );
 };
 
