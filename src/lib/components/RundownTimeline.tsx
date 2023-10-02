@@ -1,3 +1,5 @@
+'use client';
+
 /* eslint-disable radix */
 /* eslint-disable react/no-array-index-key */
 import {
@@ -42,7 +44,7 @@ const RundownTimeline = ({ events }: { events: IEvent[] }) => {
 
   const { activeStep } = useSteps({
     index: 2,
-    count: morningEvents.length,
+    count: displayEvents.length,
   });
 
   return (
