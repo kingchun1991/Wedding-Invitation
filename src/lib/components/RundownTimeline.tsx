@@ -69,10 +69,7 @@ const RundownTimeline = ({ events }: { events: IEvent[] }) => {
                 </StepIndicator>
 
                 <Box flexShrink="0">
-                  <StepTitle
-                    style={{ whiteSpace: 'pre-line' }}
-                    dangerouslySetInnerHTML={{ __html: event.Description }}
-                  />
+                  <StepTitle>{event.Location}</StepTitle>
                   <StepDescription>{event.Location}</StepDescription>
                 </Box>
 
