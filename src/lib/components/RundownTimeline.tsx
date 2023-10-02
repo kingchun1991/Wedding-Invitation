@@ -21,16 +21,6 @@ import { MdCheck } from 'react-icons/md';
 
 import type { IEvent } from '../types/event';
 
-const steps = [
-  {
-    title: 'Venue',
-    description:
-      '3/F, GRAND BALLROOM,<br> SHERATON HONG KONG HOTEL & TOWERS,<br> 20 NATHAN ROAD,<br> KOWLOON TSIM SHA TSUI,HONG KONG<br><br>香港九龍尖沙咀彌敦道20號<br>香港喜来登酒店 3樓宴會大廳',
-  },
-  { title: 'Reception', description: '6:00 PM' },
-  { title: 'Ceremony & Banquet', description: '7:00 PM' },
-];
-
 const RundownTimeline = ({ events }: { events: IEvent[] }) => {
   const displayEvents: IEvent[] = events.filter(
     (event) => event.Description !== undefined && event.Description !== ''
@@ -51,8 +41,8 @@ const RundownTimeline = ({ events }: { events: IEvent[] }) => {
   });
 
   const { activeStep } = useSteps({
-    index: 1,
-    count: steps.length,
+    index: 2,
+    count: displayEvents.length,
   });
 
   return (
