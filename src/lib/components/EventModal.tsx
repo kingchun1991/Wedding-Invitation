@@ -89,9 +89,7 @@ const EventModal: React.FC<EventModalProps> = ({
                 </p>
               )}
               {selectedEvent.Material && (
-                <Text fontSize="xl" as="b">
-                  Material: {selectedEvent.Material}
-                </Text>
+                <Text fontSize="xl">Material: {selectedEvent.Material}</Text>
               )}
             </>
           )}
