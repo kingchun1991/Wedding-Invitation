@@ -88,6 +88,11 @@ const EventModal: React.FC<EventModalProps> = ({
                   : {selectedEvent.四大長老}
                 </p>
               )}
+              {selectedEvent.Material && (
+                <Text fontSize="xl" as="b">
+                  Material: {selectedEvent.Material}
+                </Text>
+              )}
             </>
           )}
         </ModalBody>
