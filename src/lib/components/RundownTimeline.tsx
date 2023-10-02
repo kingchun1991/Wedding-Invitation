@@ -30,15 +30,15 @@ const RundownTimeline = ({ events }: { events: IEvent[] }) => {
     return fromTime >= 4 && fromTime < 12;
   });
 
-  const afternoonEvents: IEvent[] = displayEvents.filter((event) => {
-    const fromTime = parseInt(event.From.split(':')[0]);
-    return fromTime >= 12 && fromTime < 18;
-  });
+  // const afternoonEvents: IEvent[] = displayEvents.filter((event) => {
+  //   const fromTime = parseInt(event.From.split(':')[0]);
+  //   return fromTime >= 12 && fromTime < 18;
+  // });
 
-  const eveningEvents: IEvent[] = displayEvents.filter((event) => {
-    const fromTime = parseInt(event.From.split(':')[0]);
-    return fromTime >= 18 && fromTime <= 23;
-  });
+  // const eveningEvents: IEvent[] = displayEvents.filter((event) => {
+  //   const fromTime = parseInt(event.From.split(':')[0]);
+  //   return fromTime >= 18 && fromTime <= 23;
+  // });
 
   const { activeStep } = useSteps({
     index: 2,
@@ -83,7 +83,7 @@ const RundownTimeline = ({ events }: { events: IEvent[] }) => {
         </AccordionPanel>
       </AccordionItem>
       {/* //afternoonEvents */}
-      <AccordionItem>
+      {/* <AccordionItem>
         <h2>
           <AccordionButton>
             <Box as="span" flex="1" textAlign="left">
@@ -117,9 +117,9 @@ const RundownTimeline = ({ events }: { events: IEvent[] }) => {
             ))}
           </Stepper>
         </AccordionPanel>
-      </AccordionItem>
+      </AccordionItem> */}
       {/* //eveningEvents */}
-      <AccordionItem>
+      {/* <AccordionItem>
         <h2>
           <AccordionButton>
             <Box as="span" flex="1" textAlign="left">
@@ -153,7 +153,7 @@ const RundownTimeline = ({ events }: { events: IEvent[] }) => {
             ))}
           </Stepper>
         </AccordionPanel>
-      </AccordionItem>
+      </AccordionItem> */}
     </Accordion>
   );
 };
