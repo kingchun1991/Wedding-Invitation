@@ -57,7 +57,7 @@ const RundownTimeline = ({ events }: { events: IEvent[] }) => {
           </AccordionButton>
         </h2>
         <AccordionPanel pb={4}>
-          <Stepper index={activeStep} orientation="vertical" gap="0">
+          <Stepper size="lg" index={activeStep} orientation="vertical" gap="0">
             {morningEvents.map((event) => (
               <Step key={event.ID}>
                 <StepIndicator>
@@ -93,7 +93,7 @@ const RundownTimeline = ({ events }: { events: IEvent[] }) => {
           </AccordionButton>
         </h2>
         <AccordionPanel pb={4}>
-          <Stepper index={activeStep} orientation="vertical" gap="0">
+          <Stepper size="lg" index={activeStep} orientation="vertical" gap="0">
             {afternoonEvents.map((event) => (
               <Step key={event.ID}>
                 <StepIndicator>
@@ -129,7 +129,7 @@ const RundownTimeline = ({ events }: { events: IEvent[] }) => {
           </AccordionButton>
         </h2>
         <AccordionPanel pb={4}>
-          <Stepper index={activeStep} orientation="vertical" gap="0">
+          <Stepper size="lg" index={activeStep} orientation="vertical" gap="0">
             {eveningEvents.map((event) => (
               <Step key={event.ID}>
                 <StepIndicator>
