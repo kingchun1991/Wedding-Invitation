@@ -17,7 +17,7 @@ import {
   Stepper,
   useSteps,
 } from '@chakra-ui/react';
-import { MdCheck } from 'react-icons/md';
+// import { MdCheck } from 'react-icons/md';
 
 import type { IEvent } from '../types/event';
 
@@ -62,7 +62,7 @@ const RundownTimeline = ({ events }: { events: IEvent[] }) => {
               <Step key={event.ID}>
                 <StepIndicator>
                   <StepStatus
-                    complete={<MdCheck />}
+                    complete={event.From}
                     incomplete={event.From}
                     active={event.From}
                   />
@@ -98,7 +98,7 @@ const RundownTimeline = ({ events }: { events: IEvent[] }) => {
               <Step key={event.ID}>
                 <StepIndicator>
                   <StepStatus
-                    complete={<MdCheck />}
+                    complete={event.From}
                     incomplete={event.From}
                     active={event.From}
                   />
@@ -134,7 +134,7 @@ const RundownTimeline = ({ events }: { events: IEvent[] }) => {
               <Step key={event.ID}>
                 <StepIndicator>
                   <StepStatus
-                    complete={<MdCheck />}
+                    complete={event.From}
                     incomplete={event.From}
                     active={event.From}
                   />
