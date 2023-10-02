@@ -9,7 +9,7 @@ import {
   Step,
   StepDescription,
   StepIndicator,
-  // StepNumber,
+  StepNumber,
   StepSeparator,
   StepStatus,
   StepTitle,
@@ -47,13 +47,13 @@ const RundownTimeline = ({ events }: { events: IEvent[] }) => {
           <StepIndicator>
             <StepStatus
               complete={<MdLocationPin />}
-              incomplete={event.From}
-              active={event.From}
+              incomplete={<StepNumber />}
+              active={<StepNumber />}
             />
           </StepIndicator>
 
           <Box flexShrink="0">
-            <StepTitle>{event.Description}</StepTitle>
+            <StepTitle>{event.From}</StepTitle>
             <StepDescription>{event.Description} </StepDescription>
             {/* <Accordion allowToggle>
               <AccordionItem>
