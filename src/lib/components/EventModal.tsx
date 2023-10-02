@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import {
+  Badge,
   Modal,
   ModalBody,
   ModalCloseButton,
@@ -7,6 +8,7 @@ import {
   ModalFooter,
   ModalHeader,
   ModalOverlay,
+  Text,
 } from '@chakra-ui/react';
 
 import type { IEvent } from '../types/event';
@@ -31,13 +33,60 @@ const EventModal: React.FC<EventModalProps> = ({
         <ModalBody>
           {selectedEvent && (
             <>
-              {selectedEvent.新郎 && <p>新郎: {selectedEvent.新郎}</p>}
-              {selectedEvent.新娘 && <p>新娘: {selectedEvent.新娘}</p>}
-              {selectedEvent.姊妹 && <p>姊妹: {selectedEvent.姊妹}</p>}
-              {selectedEvent.兄弟 && <p>兄弟: {selectedEvent.兄弟}</p>}
-              {selectedEvent.Crew && <p>Crew: {selectedEvent.Crew}</p>}
+              {selectedEvent.From && (
+                <Text fontSize="xl" as="b">
+                  From: {selectedEvent.From}
+                </Text>
+              )}
+              {selectedEvent.新郎 && (
+                <p>
+                  <Badge fontSize="1em" colorScheme="blue">
+                    新郎
+                  </Badge>
+                  : {selectedEvent.新郎}
+                </p>
+              )}
+              {selectedEvent.新娘 && (
+                <p>
+                  {' '}
+                  <Badge fontSize="1em" colorScheme="red">
+                    新娘
+                  </Badge>
+                  : {selectedEvent.新娘}
+                </p>
+              )}
+              {selectedEvent.姊妹 && (
+                <p>
+                  <Badge fontSize="1em" colorScheme="pink">
+                    姊妹
+                  </Badge>
+                  : {selectedEvent.姊妹}
+                </p>
+              )}
+              {selectedEvent.兄弟 && (
+                <p>
+                  {' '}
+                  <Badge fontSize="1em" colorScheme="cyan">
+                    兄弟
+                  </Badge>
+                  : {selectedEvent.兄弟}
+                </p>
+              )}
+              {selectedEvent.Crew && (
+                <p>
+                  <Badge fontSize="1em" colorScheme="green">
+                    Crew
+                  </Badge>
+                  : {selectedEvent.Crew}
+                </p>
+              )}
               {selectedEvent.四大長老 && (
-                <p>四大長老: {selectedEvent.四大長老}</p>
+                <p>
+                  <Badge fontSize="1em" colorScheme="orange">
+                    四大長老
+                  </Badge>
+                  : {selectedEvent.四大長老}
+                </p>
               )}
             </>
           )}
