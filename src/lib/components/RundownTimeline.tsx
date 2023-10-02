@@ -9,14 +9,14 @@ import {
   Step,
   StepDescription,
   StepIndicator,
-  StepNumber,
+  // StepNumber,
   StepSeparator,
   StepStatus,
   StepTitle,
   Stepper,
   useSteps,
 } from '@chakra-ui/react';
-import { MdLocationPin } from 'react-icons/md';
+import { MdCheck } from 'react-icons/md';
 
 import type { IEvent } from '../types/event';
 
@@ -46,15 +46,18 @@ const RundownTimeline = ({ events }: { events: IEvent[] }) => {
         <Step key={event.ID}>
           <StepIndicator>
             <StepStatus
-              complete={<MdLocationPin />}
-              incomplete={<StepNumber />}
-              active={<StepNumber />}
+              complete={<MdCheck />}
+              incomplete={event.From}
+              active={event.From}
             />
           </StepIndicator>
 
           <Box flexShrink="0">
-            <StepTitle>{event.From}</StepTitle>
-            <StepDescription>{event.Description} </StepDescription>
+            <StepTitle
+              style={{ whiteSpace: 'pre-line' }}
+              dangerouslySetInnerHTML={{ __html: event.Description }}
+            />
+            <StepDescription>{event.Location}</StepDescription>
             {/* <Accordion allowToggle>
               <AccordionItem>
                 <h2>

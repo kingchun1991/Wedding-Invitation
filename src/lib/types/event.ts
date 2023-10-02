@@ -3,7 +3,7 @@ export interface IEvent {
   From: string;
   To: string;
   Location: string;
-  Description?: string;
+  Description: string;
   新郎?: string;
   新娘?: string;
   姊妹?: string;
