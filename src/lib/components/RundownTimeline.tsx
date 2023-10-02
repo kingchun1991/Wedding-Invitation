@@ -1,5 +1,3 @@
-'use client';
-
 /* eslint-disable radix */
 /* eslint-disable react/no-array-index-key */
 import {
@@ -12,7 +10,7 @@ import {
   Step,
   StepDescription,
   StepIndicator,
-  StepNumber,
+  // StepNumber,
   StepSeparator,
   StepStatus,
   StepTitle,
@@ -22,16 +20,6 @@ import {
 import { MdCheck } from 'react-icons/md';
 
 import type { IEvent } from '../types/event';
-
-const steps = [
-  {
-    title: 'Venue',
-    description:
-      '3/F, GRAND BALLROOM,<br> SHERATON HONG KONG HOTEL & TOWERS,<br> 20 NATHAN ROAD,<br> KOWLOON TSIM SHA TSUI,HONG KONG<br><br>香港九龍尖沙咀彌敦道20號<br>香港喜来登酒店 3樓宴會大廳',
-  },
-  { title: 'Reception', description: '6:00 PM' },
-  { title: 'Ceremony & Banquet', description: '7:00 PM' },
-];
 
 const RundownTimeline = ({ events }: { events: IEvent[] }) => {
   const displayEvents: IEvent[] = events.filter(
@@ -54,7 +42,7 @@ const RundownTimeline = ({ events }: { events: IEvent[] }) => {
 
   const { activeStep } = useSteps({
     index: 2,
-    count: morningEvents.length,
+    count: displayEvents.length,
   });
 
   return (
@@ -69,28 +57,20 @@ const RundownTimeline = ({ events }: { events: IEvent[] }) => {
           </AccordionButton>
         </h2>
         <AccordionPanel pb={4}>
-          <Stepper
-            index={activeStep}
-            orientation="vertical"
-            height="400px"
-            gap="0"
-          >
-            {steps.map((step, index) => (
-              <Step key={index}>
+          <Stepper index={activeStep} orientation="vertical" gap="0">
+            {morningEvents.map((event) => (
+              <Step key={event.ID}>
                 <StepIndicator>
                   <StepStatus
                     complete={<MdCheck />}
-                    incomplete={<StepNumber />}
-                    active={<StepNumber />}
+                    incomplete={event.From}
+                    active={event.From}
                   />
                 </StepIndicator>
 
                 <Box flexShrink="0">
-                  <StepTitle>{step.title}</StepTitle>
-                  <StepDescription
-                    style={{ whiteSpace: 'pre-line' }}
-                    dangerouslySetInnerHTML={{ __html: step.description }}
-                  />
+                  <StepTitle>{event.Location}</StepTitle>
+                  <StepDescription>{event.Location}</StepDescription>
                 </Box>
 
                 <StepSeparator />
