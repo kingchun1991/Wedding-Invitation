@@ -9,6 +9,7 @@ import {
   ModalHeader,
   ModalOverlay,
   Text,
+  Divider,
 } from '@chakra-ui/react';
 
 import type { IEvent } from '../types/event';
@@ -38,6 +39,7 @@ const EventModal: React.FC<EventModalProps> = ({
                   From: {selectedEvent.From}
                 </Text>
               )}
+              <Divider orientation="horizontal" />
               {selectedEvent.新郎 && (
                 <p>
                   <Badge fontSize="1em" colorScheme="blue">
@@ -88,8 +90,9 @@ const EventModal: React.FC<EventModalProps> = ({
                   : {selectedEvent.四大長老}
                 </p>
               )}
+              <Divider orientation="horizontal" />
               {selectedEvent.Material && (
-                <Text fontSize="xl">Material: {selectedEvent.Material}</Text>
+                <Text fontSize="lg">Material: {selectedEvent.Material}</Text>
               )}
             </>
           )}
