@@ -10,6 +10,8 @@ import {
   ModalOverlay,
   Text,
   Divider,
+  AbsoluteCenter,
+  Box,
 } from '@chakra-ui/react';
 
 import type { IEvent } from '../types/event';
@@ -35,11 +37,15 @@ const EventModal: React.FC<EventModalProps> = ({
           {selectedEvent && (
             <>
               {selectedEvent.From && (
-                <Text fontSize="xl" as="b">
-                  From: {selectedEvent.From}
-                </Text>
+                <Box position="relative" padding="10">
+                  <Divider />
+                  <AbsoluteCenter px="4">
+                    <Text fontSize="xl" as="b">
+                      From: {selectedEvent.From}
+                    </Text>
+                  </AbsoluteCenter>
+                </Box>
               )}
-              <Divider orientation="horizontal" />
               {selectedEvent.新郎 && (
                 <p>
                   <Badge fontSize="1em" colorScheme="blue">
@@ -90,9 +96,16 @@ const EventModal: React.FC<EventModalProps> = ({
                   : {selectedEvent.四大長老}
                 </p>
               )}
-              <Divider orientation="horizontal" />
               {selectedEvent.Material && (
-                <Text fontSize="lg">Material: {selectedEvent.Material}</Text>
+                <Box position="relative" padding="10">
+                  <Divider />
+                  <AbsoluteCenter px="4">
+                    <Text fontSize="lg">Material</Text>
+                  </AbsoluteCenter>
+                </Box>
+              )}
+              {selectedEvent.Material && (
+                <Text fontSize="lg">{selectedEvent.Material}</Text>
               )}
             </>
           )}
