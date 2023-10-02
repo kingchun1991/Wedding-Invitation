@@ -41,7 +41,7 @@ const RundownTimeline = ({ events }: { events: IEvent[] }) => {
   });
 
   const { activeStep } = useSteps({
-    index: 2,
+    index: 1,
     count: displayEvents.length,
   });
 
