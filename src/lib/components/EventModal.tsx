@@ -100,7 +100,9 @@ const EventModal: React.FC<EventModalProps> = ({
                 <Box position="relative" padding="10">
                   <Divider />
                   <AbsoluteCenter px="4">
-                    <Text fontSize="lg">Material</Text>
+                    <Text fontSize="xl" as="b">
+                      Material
+                    </Text>
                   </AbsoluteCenter>
                 </Box>
               )}
