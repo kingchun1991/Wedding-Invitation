@@ -6,6 +6,7 @@ import {
   AccordionPanel,
   Badge,
   Box,
+  Button,
   Stack,
   Step,
   StepDescription,
@@ -14,10 +15,14 @@ import {
   StepStatus,
   StepTitle,
   Stepper,
+  useDisclosure,
   useSteps,
 } from '@chakra-ui/react';
+import { useState } from 'react';
 
 import type { IEvent } from '../types/event';
+
+import EventModal from './EventModal';
 
 function renderBadges(data: IEvent) {
   const badges = [];
@@ -68,10 +73,17 @@ const RundownTimeline = ({
   index: number;
   events: IEvent[];
 }) => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const [selectedEvent, setSelectedEvent] = useState<IEvent | null>(null);
   const { activeStep } = useSteps({
     index,
     count: events.length,
   });
+
+  const handleEventClick = (event: IEvent) => {
+    setSelectedEvent(event);
+    onOpen();
+  };
 
   return (
     <AccordionItem>
@@ -95,13 +107,28 @@ const RundownTimeline = ({
                 />
               </StepIndicator>
 
-              <Box flexShrink="0">
+              <Box flexShrink="0" p={2}>
                 <StepTitle
                   style={{ whiteSpace: 'pre-line' }}
                   dangerouslySetInnerHTML={{ __html: event.Description }}
                 />
                 <StepDescription>{event.Location}</StepDescription>
                 {renderBadges(event)}
+
+                <Button
+                  borderRadius="md"
+                  size="sm"
+                  top={2}
+                  onClick={() => handleEventClick(event)}
+                >
+                  Detail
+                </Button>
+
+                <EventModal
+                  isOpen={isOpen}
+                  onClose={onClose}
+                  selectedEvent={selectedEvent}
+                />
               </Box>
 
               <StepSeparator />

@@ -4,7 +4,7 @@
 
 'use client';
 
-import { Accordion } from '@chakra-ui/react';
+import { Accordion, Text } from '@chakra-ui/react';
 
 import data from '~/../data/data.json';
 import RundownTimeline from '~/lib/components/RundownTimeline';
@@ -120,23 +120,28 @@ const Rundown = () => {
   }
 
   return (
-    <Accordion allowToggle>
-      <RundownTimeline
-        title="Morning"
-        index={morningIndex}
-        events={morningEvents}
-      />
-      <RundownTimeline
-        title="Afternoon"
-        index={afternoonIndex}
-        events={afternoonEvents}
-      />
-      <RundownTimeline
-        title="Evening"
-        index={eveningIndex}
-        events={eveningEvents}
-      />
-    </Accordion>
+    <>
+      <Text fontSize="2xl" as="b">
+        Rundown
+      </Text>
+      <Accordion allowToggle>
+        <RundownTimeline
+          title="Morning"
+          index={morningIndex}
+          events={morningEvents}
+        />
+        <RundownTimeline
+          title="Afternoon"
+          index={afternoonIndex}
+          events={afternoonEvents}
+        />
+        <RundownTimeline
+          title="Evening"
+          index={eveningIndex}
+          events={eveningEvents}
+        />
+      </Accordion>
+    </>
   );
 };
 
