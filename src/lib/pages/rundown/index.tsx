@@ -5,10 +5,11 @@
 'use client';
 
 import { Accordion, Text } from '@chakra-ui/react';
+import { AddToCalendarButton } from 'add-to-calendar-button-react';
 
 import data from '~/../data/data.json';
 import RundownTimeline from '~/lib/components/RundownTimeline';
-import type { IEvent } from '~/lib/types/event';
+import type { IEvent, IConvertedEvent } from '~/lib/types/event';
 
 const Rundown = () => {
   const events = data as IEvent[];
@@ -16,6 +17,47 @@ const Rundown = () => {
   const displayEvents: IEvent[] = events.filter(
     (event) => event.Description !== undefined && event.Description !== ''
   );
+  const convertedData: IConvertedEvent[] = displayEvents
+    .map((event, index) => {
+      const [startHour, startMinute] = event.From.split(':');
+      const startTime = `${startHour.padStart(2, '0')}:${startMinute}`;
+
+      let endTime = '';
+      if (index < displayEvents.length - 1) {
+        const [endHour, endMinute] = displayEvents[index + 1].From.split(':');
+        endTime = `${endHour.padStart(2, '0')}:${endMinute}`;
+      } else {
+        const [endHour, endMinute] = event.To.split(':');
+        endTime = `${endHour.padStart(2, '0')}:${endMinute}`;
+      }
+
+      let description = '';
+
+      Object.entries(event).forEach(([key, value]) => {
+        if (
+          value &&
+          key !== 'ID' &&
+          key !== 'From' &&
+          key !== 'To' &&
+          key !== 'Location' &&
+          key !== 'Description'
+        ) {
+          description += `${key}: ${value}<br>`;
+        }
+      });
+
+      const convertedEvent: IConvertedEvent = {
+        name: event.Description,
+        description,
+        startDate: 'today',
+        location: event.Location,
+        startTime,
+        endTime,
+      };
+
+      return convertedEvent;
+    })
+    .filter(Boolean); // Remove null values
 
   const getCurrentEventID = (): string | undefined => {
     const now = new Date();
@@ -141,6 +183,13 @@ const Rundown = () => {
           events={eveningEvents}
         />
       </Accordion>
+      <AddToCalendarButton
+        name="Event Series"
+        dates={convertedData}
+        timeZone="Asia/Hong_Kong"
+        options="'Apple','Google'"
+        lightMode="system"
+      />
     </>
   );
 };

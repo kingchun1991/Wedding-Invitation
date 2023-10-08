@@ -13,3 +13,12 @@ export interface IEvent {
   Material?: string;
   Remarks?: string;
 }
+
+export interface IConvertedEvent {
+  name: string;
+  description: string;
+  startDate: string;
+  startTime: string;
+  endTime: string;
+  location: string;
+}
