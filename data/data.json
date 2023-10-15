@@ -31,7 +31,7 @@
 ,
 {"ID":"16","From":"8:15","To":"8:30","Location":"觀塘女家","Description":"新娘派利是給姊妹","新郎":"","新娘":"派利是給姊妹","姊妹":"新娘派利是給姊妹","兄弟":"","Crew":"[攝影] 新娘派利是給姊妹","四大長老":"","Material":"姊妹利是 x 7"}
 ,
-{"ID":"17","From":"8:30","To":"8:45","Location":"觀塘女家","Description":"兄弟女家樓下集合","新郎":"","新娘":"","姊妹":"","兄弟":"兄弟女家樓下集合 + 戴襟花\n[Tony] 派利是給保安\n[Ray] whatsapp group問姊妹ready未","Crew":"","四大長老":"","Material":"保安利是 x ?\n兄弟襟花 x 7"}
+{"ID":"17","From":"8:30","To":"8:45","Location":"觀塘女家","Description":"兄弟女家樓下集合","新郎":"","新娘":"","姊妹":"","兄弟":"兄弟女家樓下集合 + 戴襟花\n[Ray] 派利是給保安\n[Ray] whatsapp group問姊妹ready未","Crew":"","四大長老":"","Material":"保安利是 x ?\n兄弟襟花 x 7"}
 ,
 {"ID":"18","From":"8:45","To":"9:00","Location":"觀塘女家","Description":"拍門 + game + 愛的宣言","新郎":"拍門 + game + 愛的宣言","新娘":"拍門 + game + 愛的宣言","姊妹":"拍門 + game + 愛的宣言\n[Joanna, Kristy, Vivien, Vicx] game PIC","兄弟":"拍門 + game + 愛的宣言","Crew":"[攝影] 拍門 + game + 愛的宣言","四大長老":"","Material":"開門利是\n攔門花球 \n遊戲物資\n愛的宣言 "}
 ,
@@ -43,15 +43,15 @@
 ,
 {"ID":"22","From":"9:45","To":"10:00","Location":"觀塘女家","Description":"出門 + 佈置花車 + 花車前合照","新郎":"出門 + 花車前合照","新娘":"出門 + 拎花球 + 花車前合照","姊妹":"[All姊妹] 準備出門 要帶齊\n金器袋\n敬茶物品\n- 敬茶list,\n- 吉祥說話list\n- 跪墊\n- 紙杯\n- 茶葉, 紅棗, 蓮子\n- 托盆\n- label紙\n- 筆\n紅傘\n米\n花車裝飾\n[Vivien] 拎遮\n[Kristy] 薩米","兄弟":"[Chris] Contact司機 (花車)\n[Chris] Contact司機 (28座)\n(兄弟x6) 佈置花車","Crew":"[攝影] 出門 , 佈置花車","四大長老":"","Material":"花球\n花車裝飾\n紅傘\r\n米"}
 ,
-{"ID":"23","From":"10:00","To":"10:15","Location":"觀塘女家","Description":"開車","新郎":"上花車","新娘":"上花車","姊妹":"上車 (28座)","兄弟":"[Tony] 派利是給司機 (花車+28座)\n(兄弟x6) 影完花車 要將花車裝飾收埋\n上車 (28座)","Crew":"[攝影] 上車 (28座)\n[化妝] 上車 (28座)","四大長老":"","Material":"司機利是 x 2"}
+{"ID":"23","From":"10:00","To":"10:15","Location":"觀塘女家","Description":"開車","新郎":"上花車","新娘":"上花車","姊妹":"上車 (28座)","兄弟":"[Ray] 派利是給司機 (花車+28座)\n(兄弟x6) 影完花車 要將花車裝飾收埋\n上車 (28座)","Crew":"[攝影] 上車 (28座)\n[化妝] 上車 (28座)","四大長老":"","Material":"司機利是 x 2"}
 ,
 {"ID":"24","From":"10:15","To":"10:30","Location":"","Description":"","新郎":"","新娘":"","姊妹":"","兄弟":"","Crew":"","四大長老":"","Material":""}
 ,
 {"ID":"25","From":"10:30","To":"10:45","Location":"","Description":"","新郎":"","新娘":"","姊妹":"","兄弟":"","Crew":"","四大長老":"","Material":""}
 ,
-{"ID":"26","From":"10:45","To":"11:00","Location":"馬鞍山男家","Description":"到男家 (必須11am吉時前入門)","新郎":"","新娘":"","姊妹":"[Yvonne] 拎金器袋上男家\n[Raj & Nicole] 拎敬茶物品上男家\n- 敬茶list,\n- 吉祥說話list\n- 跪墊\n- 紙杯\n- 茶葉, 紅棗, 蓮子\n- 托盆\n- label紙\n- 筆","兄弟":"[Tony] 派利是給保安","Crew":"[化妝] 食飯\n[28座司機] 食飯\n[花車司機] 食飯","四大長老":"[男家媽媽] 派利是給攝影師 化妝師","Material":"保安利是 x ?\n化妝師利是 x 2 + Idy\n攝影利是 x 3"}
+{"ID":"26","From":"10:45","To":"11:00","Location":"馬鞍山男家","Description":"到男家 (必須11am吉時前入門)","新郎":"","新娘":"","姊妹":"[Yvonne] 拎金器袋上男家\n[Raj & Nicole] 拎敬茶物品上男家\n- 敬茶list,\n- 吉祥說話list\n- 跪墊\n- 紙杯\n- 茶葉, 紅棗, 蓮子\n- 托盆\n- label紙\n- 筆","兄弟":"[Ray] 派利是給保安","Crew":"[化妝] 食飯\n[28座司機] 食飯\n[花車司機] 食飯","四大長老":"[男家媽媽] 派利是給攝影師 化妝師","Material":"保安利是 x ?\n化妝師利是 x 2 + Idy\n攝影利是 x 3"}
 ,
-{"ID":"27","From":"11:00","To":"11:15","Location":"馬鞍山男家","Description":"敬茶 (約5分鐘1pair) x 4","新郎":"敬茶","新娘":"敬茶","姊妹":"[Raj] 拎茶 + 幫手戴金器\n[Yvonne] label + 拍攝金器\n[Nicole] 講吉祥說話 + 幫手戴金器","兄弟":"","Crew":"[攝影] 敬茶","四大長老":"","Material":"敬茶list,\n吉祥說話list\n跪墊\n茶壼\n紙杯\n茶葉, 紅棗, 蓮子\n托盆\n金器袋\nlabel紙\n筆"}
+{"ID":"27","From":"11:00","To":"11:15","Location":"馬鞍山男家","Description":"敬茶 (約5分鐘1pair) x 3","新郎":"敬茶","新娘":"敬茶","姊妹":"[Raj] 拎茶 + 幫手戴金器\n[Yvonne] label + 拍攝金器\n[Nicole] 講吉祥說話 + 幫手戴金器","兄弟":"","Crew":"[攝影] 敬茶","四大長老":"","Material":"敬茶list,\n吉祥說話list\n跪墊\n茶壼\n紙杯\n茶葉, 紅棗, 蓮子\n托盆\n金器袋\nlabel紙\n筆"}
 ,
 {"ID":"28","From":"11:15","To":"11:30","Location":"馬鞍山男家","Description":"家人合照","新郎":"家人合照","新娘":"家人合照","姊妹":"","兄弟":"","Crew":"[攝影] 家人合照","四大長老":"[男家父母] 家人合照","Material":""}
 ,
@@ -101,9 +101,9 @@
 ,
 {"ID":"51","From":"17:00","To":"17:15","Location":"Sheraton","Description":"","新郎":"","新娘":"","姊妹":"","兄弟":"","Crew":"","四大長老":"","Material":""}
 ,
-{"ID":"52","From":"17:15","To":"17:30","Location":"Sheraton","Description":"新郎,新娘,四大長老集合","新郎":"集合","新娘":"集合","姊妹":"","兄弟":"[Tony] 派利是給酒店工作人員","Crew":"","四大長老":"集合","Material":"酒店工作人員利是 x ?"}
+{"ID":"52","From":"17:15","To":"17:30","Location":"Sheraton","Description":"新郎,新娘,四大長老集合","新郎":"集合","新娘":"集合","姊妹":"","兄弟":"[Ray] 派利是給酒店工作人員","Crew":"","四大長老":"集合","Material":"酒店工作人員利是 x ?"}
 ,
-{"ID":"53","From":"17:30","To":"17:45","Location":"Sheraton","Description":"新人影Photobooth + 切餅儀式 + 主人家合照 + 敬茶\n試音樂及影片 + 進場綵排 + 場地開會 + 放deco入foyer","新郎":"影Photobooth + 切餅儀式 + 主人家合照 + 敬茶","新娘":"影Photobooth + 切餅儀式 + 主人家合照 + 敬茶","姊妹":"[All姊妹] 進場綵排\n[Raj] 拎茶 + 幫手戴金器\n[Yvonne] label + 拍攝金器\n[Nicole] 講吉祥說話 + 幫手戴金器\n[All姊妹] 放deco入foyer","兄弟":"[All兄弟] 進場綵排\n[All姊妹] 放deco入pre-function area\n[1兄弟] 試音樂及影片","Crew":"[MC] 進場綵排 + 場地開會 \n[攝影] 切餅儀式 + 主人家合照 + 敬茶","四大長老":"[四大長老] 主人家合照","Material":"Cake\nDeco\n敬茶物品\n- 敬茶list,\n- 吉祥說話list\n- 跪墊\n- 紙杯\n- 茶葉, 紅棗, 蓮子\n- 托盆\n- label紙\n- 筆\n- 茶壼 (from hotel)\n音樂USB (mp3)\n成長片段 (HDMI / VGA output, format mp4 )\nPhoto slide show USB"}
+{"ID":"53","From":"17:30","To":"17:45","Location":"Sheraton","Description":"新人影Photobooth + 切餅儀式 + 主人家合照 + 敬茶 x 13 pair\n試音樂及影片 + 進場綵排 + 場地開會 + 放deco入foyer","新郎":"影Photobooth + 切餅儀式 + 主人家合照 + 敬茶","新娘":"影Photobooth + 切餅儀式 + 主人家合照 + 敬茶","姊妹":"[All姊妹] 進場綵排\n[Raj] 拎茶 + 幫手戴金器\n[Yvonne] label + 拍攝金器\n[Nicole] 講吉祥說話 + 幫手戴金器\n[All姊妹] 放deco入foyer","兄弟":"[All兄弟] 進場綵排\n[All姊妹] 放deco入pre-function area\n[1兄弟] 試音樂及影片","Crew":"[MC] 進場綵排 + 場地開會 \n[攝影] 切餅儀式 + 主人家合照 + 敬茶","四大長老":"[四大長老] 主人家合照","Material":"Cake\nDeco\n敬茶物品\n- 敬茶list,\n- 吉祥說話list\n- 跪墊\n- 紙杯\n- 茶葉, 紅棗, 蓮子\n- 托盆\n- label紙\n- 筆\n- 茶壼 (from hotel)\n音樂USB (mp3)\n成長片段 (HDMI / VGA output, format mp4 )\nPhoto slide show USB"}
 ,
 {"ID":"54","From":"18:00","To":"18:15","Location":"Sheraton","Description":"迎賓","新郎":"迎賓","新娘":"迎賓","姊妹":"[Joanna] Reception","兄弟":"[Tony, Tommy] Reception","Crew":"[攝影] 迎賓","四大長老":"[四大長老] 迎賓","Material":""}
 ,
