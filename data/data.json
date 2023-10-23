@@ -69,7 +69,7 @@
 ,
 {"ID":"35","From":"13:00","To":"13:15","Location":"馬鞍山男家","Description":"","新郎":"","新娘":"化妝完成 (外拍)","姊妹":"","兄弟":"","Crew":"","四大長老":"","Material":"","Check Point":""}
 ,
-{"ID":"36","From":"13:15","To":"13:30","Location":"馬鞍山男家/海澄軒","Description":"","新郎":"Contact司機 (花車)\n- 花車book左13:30到","新娘":"","姊妹":"","兄弟":"[Ray] 準備埋單\n[Chris] Contact司機 (28座+ 攝影) 海澄軒集合\n- 28座 book左13:30到","Crew":"","四大長老":"","Material":"","Check Point":""}
+{"ID":"36","From":"13:15","To":"13:30","Location":"馬鞍山男家/海澄軒","Description":"Contact司機+收拾","新郎":"Contact司機 (花車)\n- 花車book左13:30到","新娘":"","姊妹":"","兄弟":"[Ray] 準備埋單\n[Chris] Contact司機 (28座+ 攝影) 海澄軒集合\n- 28座 book左13:30到","Crew":"","四大長老":"","Material":"","Check Point":""}
 ,
 {"ID":"37","From":"13:30","To":"13:45","Location":"馬鞍山男家/海澄軒","Description":"新郎,新娘,兄弟,姊妹,攝影師,化妝 出發去西九","新郎":"上車 (花車)","新娘":"拎花球 + 上車 (花車)","姊妹":"上車 (28座)","兄弟":"上車 (28座)","Crew":"[攝影] 上車 (28座)\n[化妝] 上車 (花車)","四大長老":"","Material":"花球","Check Point":""}
 ,
@@ -81,11 +81,11 @@
 ,
 {"ID":"41","From":"14:30","To":"14:45","Location":"西九文化區","Description":"外拍 + 補影新郎兄弟 + 新郎派利是給兄弟","新郎":"外拍 + 補影新郎兄弟 + 派利是給兄弟","新娘":"外拍","姊妹":"外拍","兄弟":"外拍 + 補影新郎兄弟 + 新郎派利是給兄弟","Crew":"[攝影] 外拍 + 補影新郎兄弟","四大長老":"","Material":"兄弟利是 x 7","Check Point":""}
 ,
-{"ID":"42","From":"14:45","To":"15:00","Location":"","Description":"","新郎":"","新娘":"","姊妹":"","兄弟":"","Crew":"","四大長老":"","Material":"","Check Point":""}
+{"ID":"42","From":"14:45","To":"15:00","Location":"西九文化區","Description":"","新郎":"","新娘":"","姊妹":"","兄弟":"","Crew":"","四大長老":"","Material":"","Check Point":""}
 ,
-{"ID":"43","From":"15:00","To":"15:15","Location":"","Description":"","新郎":"","新娘":"","姊妹":"","兄弟":"","Crew":"","四大長老":"","Material":"","Check Point":""}
+{"ID":"43","From":"15:00","To":"15:15","Location":"西九文化區","Description":"","新郎":"","新娘":"","姊妹":"","兄弟":"","Crew":"","四大長老":"","Material":"","Check Point":""}
 ,
-{"ID":"44","From":"15:15","To":"15:30","Location":"西九文化區","Description":"","新郎":"","新娘":"","姊妹":"","兄弟":"[Chris] Contact司機 (28座)\n- 28座 book左15:30到","Crew":"","四大長老":"","Material":"","Check Point":""}
+{"ID":"44","From":"15:15","To":"15:30","Location":"西九文化區","Description":"Contact司機+收拾","新郎":"","新娘":"","姊妹":"","兄弟":"[Chris] Contact司機 (28座)\n- 28座 book左15:30到","Crew":"","四大長老":"","Material":"","Check Point":""}
 ,
 {"ID":"45","From":"15:30","To":"15:45","Location":"西九文化區","Description":"新郎,新娘,兄弟,姊妹,攝影師,化妝 出發去酒店","新郎":"上車 (28座)","新娘":"上車 (28座)","姊妹":"上車 (28座)","兄弟":"上車 (28座)","Crew":"[攝影] 上車 (28座)\n[化妝] 上車 (28座)","四大長老":"","Material":"","Check Point":""}
 ,
@@ -115,7 +115,7 @@
 ,
 {"ID":"58","From":"18:45","To":"19:00","Location":"Sheraton","Description":"","新郎":"","新娘":"","姊妹":"","兄弟":"","Crew":"","四大長老":"","Material":"","Check Point":""}
 ,
-{"ID":"59","From":"19:00","To":"19:15","Location":"Sheraton","Description":"新娘化妝換衫(婚紗) + 新郎換衫","新郎":"換衫+ 換鞋","新娘":"化妝換衫 (婚紗)","姊妹":"[all姊妹 except reception] 叫人入席","兄弟":"[all兄弟 except reception] 叫人入席","Crew":"","四大長老":"[四大長老] 入席","Material":"婚紗\n新郎衫\n新郎鞋","Check Point":""}
+{"ID":"59","From":"19:00","To":"19:15","Location":"Sheraton","Description":"新娘化妝換衫(婚紗) + 新郎換衫","新郎":"換衫+ 換鞋","新娘":"化妝換衫 (婚紗)","姊妹":"[All姊妹 except reception] 叫人入席","兄弟":"[All兄弟 except reception] 叫人入席","Crew":"","四大長老":"[四大長老] 入席","Material":"婚紗\n新郎衫\n新郎鞋","Check Point":""}
 ,
 {"ID":"60","From":"19:15","To":"19:30","Location":"Sheraton","Description":"顏律師到達","新郎":"集合男女家爸爸\n派利是給顏律師\n拎結婚證書套","新娘":"化妝換衫完成 (婚紗)","姊妹":"","兄弟":"","Crew":"[顏律師] 到達 + 對証件","四大長老":"[男女家爸爸] 對証件","Material":"HKID card of 男女家爸爸, 新娘,新郎\n結婚證書套\n律師利是 x1","Check Point":""}
 ,
@@ -129,7 +129,7 @@
 ,
 {"ID":"65","From":"20:30","To":"20:45","Location":"Sheraton","Description":"","新郎":"","新娘":"","姊妹":"","兄弟":"","Crew":"","四大長老":"","Material":"","Check Point":""}
 ,
-{"ID":"66","From":"20:45","To":"21:00","Location":"Sheraton","Description":"","新郎":"","新娘":"","姊妹":"","兄弟":"[Kenneth] 拎攝影師條片入落部Macbook","Crew":"","四大長老":"","Material":"Macbook","Check Point":""}
+{"ID":"66","From":"20:45","To":"21:00","Location":"Sheraton","Description":"\n準備播放朝拍","新郎":"","新娘":"","姊妹":"","兄弟":"[Kenneth] 拎攝影師條片入落部Macbook","Crew":"","四大長老":"","Material":"Macbook","Check Point":""}
 ,
 {"ID":"67","From":"21:00","To":"21:15","Location":"Sheraton","Description":"播放朝拍片、新人及主人家敬酒儀式","新郎":"敬酒","新娘":"敬酒","姊妹":"敬酒","兄弟":"敬酒","Crew":"[攝影] 敬酒","四大長老":"敬酒","Material":"","Check Point":""}
 ,
