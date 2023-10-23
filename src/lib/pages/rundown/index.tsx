@@ -1,13 +1,31 @@
+/* eslint-disable @typescript-eslint/no-shadow */
+/* eslint-disable react/no-array-index-key */
 /* eslint-disable sonarjs/cognitive-complexity */
 /* eslint-disable no-restricted-syntax */
 /* eslint-disable radix */
 
 'use client';
 
-import { Accordion, Text } from '@chakra-ui/react';
+import {
+  Accordion,
+  AccordionButton,
+  AccordionIcon,
+  AccordionItem,
+  AccordionPanel,
+  Box,
+  Table,
+  TableContainer,
+  Tbody,
+  Td,
+  Text,
+  Th,
+  Thead,
+  Tr,
+} from '@chakra-ui/react';
 import { AddToCalendarButton } from 'add-to-calendar-button-react';
 
 import data from '~/../data/data.json';
+// import AvatarTag from '~/lib/components/AvatarTag';
 import RundownTimeline from '~/lib/components/RundownTimeline';
 import type { IEvent, IConvertedEvent } from '~/lib/types/event';
 
@@ -161,12 +179,56 @@ const Rundown = () => {
     }
   }
 
+  const categories = [
+    { name: 'TimeKeeper', pic: ['Nicole', 'Ray'] },
+    { name: 'Game', pic: ['Joanna', 'Kristy', 'Vivien', 'Vicx'] },
+    { name: '金器', pic: ['Yvonne', 'Raj', 'Nicole'] },
+    { name: 'Money', pic: ['Ray', 'Tony', 'Tommy'] },
+    { name: 'Contact', pic: ['Chris'] },
+    { name: '戒指', pic: ['Ivan'] },
+    { name: '影片音樂', pic: ['Kenneth', 'Julius'] },
+    { name: '物資', pic: ['Vicx'] },
+  ];
   return (
     <>
       <Text fontSize="2xl" as="b">
         Rundown
       </Text>
       <Accordion allowToggle>
+        <AccordionItem>
+          <h2>
+            <AccordionButton>
+              <Box as="span" flex="1" textAlign="left">
+                PIC
+              </Box>
+              <AccordionIcon />
+            </AccordionButton>
+          </h2>
+          <AccordionPanel pb={4}>
+            <TableContainer>
+              <Table variant="simple" size="sm">
+                <Thead>
+                  <Tr>
+                    <Th />
+                    <Th>People</Th>
+                  </Tr>
+                </Thead>
+                <Tbody>
+                  {categories.map((category, index) => (
+                    <Tr key={index}>
+                      <Td>{category.name}</Td>
+                      <Td>
+                        {category.pic.map((name, index) => (
+                          <Text key={index}>{name}</Text>
+                        ))}
+                      </Td>
+                    </Tr>
+                  ))}
+                </Tbody>
+              </Table>
+            </TableContainer>
+          </AccordionPanel>
+        </AccordionItem>
         <RundownTimeline
           title="Morning"
           index={morningIndex}
