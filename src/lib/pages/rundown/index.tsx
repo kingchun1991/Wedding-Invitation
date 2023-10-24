@@ -67,7 +67,7 @@ const Rundown = () => {
       const convertedEvent: IConvertedEvent = {
         name: event.Description,
         description,
-        startDate: 'today',
+        startDate: '2023-11-11',
         location: event.Location,
         startTime,
         endTime,
