@@ -67,7 +67,7 @@ const Rundown = () => {
       const convertedEvent: IConvertedEvent = {
         name: event.Description,
         description,
-        startDate: '2023-11-11',
+        startDate: "2023-11-11",
         location: event.Location,
         startTime,
         endTime,
@@ -182,7 +182,7 @@ const Rundown = () => {
   const categories = [
     { name: 'Time Keeper', pic: ['Vicx', 'Ray'] },
     { name: 'Game', pic: ['Joanna', 'Kristy', 'Vivien', 'Vicx'] },
-    { name: '金器+敬茶', pic: ['Yvonne', 'Raj', 'Nicole','Joanna'] },
+    { name: '金器+敬茶', pic: ['Yvonne', 'Raj', 'Nicole', 'Joanna'] },
     { name: '利是', pic: ['Ray'] },
     { name: 'Reception', pic: ['Joanna', 'Tony', 'Tommy'] },
     { name: 'Contact', pic: ['Chris'] },
