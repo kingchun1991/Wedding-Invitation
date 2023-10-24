@@ -180,10 +180,11 @@ const Rundown = () => {
   }
 
   const categories = [
-    { name: 'TimeKeeper', pic: ['Nicole', 'Ray'] },
+    { name: 'Time Keeper', pic: ['Vicx', 'Ray'] },
     { name: 'Game', pic: ['Joanna', 'Kristy', 'Vivien', 'Vicx'] },
-    { name: '金器', pic: ['Yvonne', 'Raj', 'Nicole'] },
-    { name: 'Money', pic: ['Ray', 'Tony', 'Tommy'] },
+    { name: '金器+敬茶', pic: ['Yvonne', 'Raj', 'Nicole'] },
+    { name: '利是', pic: ['Ray'] },
+    { name: 'Reception', pic: ['Joanna', 'Tony', 'Tommy'] },
     { name: 'Contact', pic: ['Chris'] },
     { name: '戒指', pic: ['Ivan'] },
     { name: '影片音樂', pic: ['Kenneth', 'Julius'] },
