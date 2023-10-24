@@ -182,7 +182,7 @@ const Rundown = () => {
   const categories = [
     { name: 'Time Keeper', pic: ['Vicx', 'Ray'] },
     { name: 'Game', pic: ['Joanna', 'Kristy', 'Vivien', 'Vicx'] },
-    { name: '金器+敬茶', pic: ['Yvonne', 'Raj', 'Nicole'] },
+    { name: '金器+敬茶', pic: ['Yvonne', 'Raj', 'Nicole','Joanna'] },
     { name: '利是', pic: ['Ray'] },
     { name: 'Reception', pic: ['Joanna', 'Tony', 'Tommy'] },
     { name: 'Contact', pic: ['Chris'] },
