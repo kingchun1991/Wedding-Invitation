@@ -195,11 +195,21 @@ const Rundown = () => {
 
   const contactList = [
     { name: 'Idy Yau', title: '化妝師 (新娘) ', phone: '98091979' },
-    { name: 'MC Alvin Li', title: 'MC', phone: '93897936' },
+    { name: 'Alvin Li', title: 'MC', phone: '93897936' },
     {
       name: 'Sum',
       title: '攝影師 (三木攝影) ',
       phone: '60119078',
+    },
+    {
+      name: 'TBC',
+      title: '花車司機 (Sheraton)',
+      phone: 'TBC',
+    },
+    {
+      name: 'TBC',
+      title: '28座司機 (Wedding Box HK) ',
+      phone: 'TBC',
     },
     {
       name: 'Charlotte Lee',
