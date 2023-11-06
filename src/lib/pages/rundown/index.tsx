@@ -13,6 +13,8 @@ import {
   AccordionItem,
   AccordionPanel,
   Box,
+  Flex,
+  HStack,
   Table,
   TableContainer,
   Tbody,
@@ -192,15 +194,28 @@ const Rundown = () => {
   ];
 
   const contactList = [
-    { name: '化妝師 (新娘) Idy Yau', phone: '98091979' },
-    { name: 'MC Alvin Li', phone: '93897936' },
-    { name: '攝影師 (三木攝影) Sum', phone: '60119078' },
-    { name: '酒店 (Sheraton) Charlotte Lee', phone: '95752375' },
+    { name: 'Idy Yau', title: '化妝師 (新娘) ', phone: '98091979' },
+    { name: 'MC Alvin Li', title: 'MC', phone: '93897936' },
     {
-      name: 'Deco - Main backdrop (Mygift Event & Decoration) Lawrence Lam',
+      name: 'Sum',
+      title: '攝影師 (三木攝影) ',
+      phone: '60119078',
+    },
+    {
+      name: 'Charlotte Lee',
+      title: '酒店 (Sheraton) ',
+      phone: '95752375',
+    },
+    {
+      name: 'Lawrence Lam',
+      title: 'Deco - Main backdrop (Mygift Event & Decoration) ',
       phone: '63386568',
     },
-    { name: '律師 (Merry Marry) 顏俊逸 Joe', phone: '69292433' },
+    {
+      name: '顏俊逸 Joe',
+      title: '律師 (Merry Marry) ',
+      phone: '69292433',
+    },
   ];
 
   return (
@@ -268,24 +283,29 @@ const Rundown = () => {
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
-            <TableContainer>
-              <Table variant="simple">
-                <Thead>
-                  <Tr>
-                    <Th>Name</Th>
-                    <Th>Phone</Th>
+            <Table variant="simple" size="sm">
+              <Tbody>
+                {contactList.map((contact, index) => (
+                  <Tr key={index}>
+                    <Td>
+                      <Flex mb={1}>
+                        <HStack>
+                          <Text fontSize="xs">{contact.title}</Text>
+                        </HStack>
+                      </Flex>
+                      <Flex mb={1}>
+                        <Text fontSize="lg" as="b">
+                          {contact.name}
+                        </Text>
+                      </Flex>
+                    </Td>
+                    <Td>
+                      <Text as="b">{contact.phone}</Text>
+                    </Td>
                   </Tr>
-                </Thead>
-                <Tbody>
-                  {contactList.map((contact, index) => (
-                    <Tr key={index}>
-                      <Td>{contact.name}</Td>
-                      <Td>{contact.phone}</Td>
-                    </Tr>
-                  ))}
-                </Tbody>
-              </Table>
-            </TableContainer>
+                ))}
+              </Tbody>
+            </Table>
           </AccordionPanel>
         </AccordionItem>
       </Accordion>
