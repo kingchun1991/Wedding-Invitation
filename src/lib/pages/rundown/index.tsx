@@ -190,6 +190,19 @@ const Rundown = () => {
     { name: '影片音樂', pic: ['Kenneth', 'Julius'] },
     { name: '物資', pic: ['Vicx'] },
   ];
+
+  const contactList = [
+    { name: '化妝師 (新娘) Idy Yau', phone: '98091979' },
+    { name: 'MC Alvin Li', phone: '93897936' },
+    { name: '攝影師 (三木攝影) Sum', phone: '60119078' },
+    { name: '酒店 (Sheraton) Charlotte Lee', phone: '95752375' },
+    {
+      name: 'Deco - Main backdrop (Mygift Event & Decoration) Lawrence Lam',
+      phone: '63386568',
+    },
+    { name: '律師 (Merry Marry) 顏俊逸 Joe', phone: '69292433' },
+  ];
+
   return (
     <>
       <Text fontSize="2xl" as="b">
@@ -245,6 +258,36 @@ const Rundown = () => {
           index={eveningIndex}
           events={eveningEvents}
         />
+        <AccordionItem>
+          <h2>
+            <AccordionButton>
+              <Box as="span" flex="1" textAlign="left">
+                Contact
+              </Box>
+              <AccordionIcon />
+            </AccordionButton>
+          </h2>
+          <AccordionPanel pb={4}>
+            <TableContainer>
+              <Table variant="simple">
+                <Thead>
+                  <Tr>
+                    <Th>Name</Th>
+                    <Th>Phone</Th>
+                  </Tr>
+                </Thead>
+                <Tbody>
+                  {contactList.map((contact, index) => (
+                    <Tr key={index}>
+                      <Td>{contact.name}</Td>
+                      <Td>{contact.phone}</Td>
+                    </Tr>
+                  ))}
+                </Tbody>
+              </Table>
+            </TableContainer>
+          </AccordionPanel>
+        </AccordionItem>
       </Accordion>
       <AddToCalendarButton
         name="Event Series"
