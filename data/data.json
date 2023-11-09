@@ -25,7 +25,7 @@
 ,
 {"ID":"13","From":"7:30","To":"7:45","Location":"觀塘女家","Description":"拍攝金器雜件","新郎":"","新娘":"化妝完成\n派利是給攝影師","姊妹":"所有姊妹化妝完成\n[Vicx] 到達","兄弟":"","Crew":"[攝影] 拍攝金器雜件","四大長老":"[女家媽媽] 派利是給攝影師","Material":"攝影利是 x 3 X 2\n姊妹手花 x 1","Check Point":""}
 ,
-{"ID":"14","From":"7:45","To":"8:00","Location":"觀塘女家","Description":"拍攝新娘, 姊妹","新郎":"新郎set頭\n派利是給保安\n派利是給化妝師\n拎兄弟襟花","新娘":"拍攝新娘, 姊妹","姊妹":"拍攝新娘, 姊妹","兄弟":"[Julius] set頭","Crew":"[攝影] 拍攝新娘, 姊妹\n[化妝] 新郎,兄弟set頭","四大長老":"","Material":"化妝師利是 x 2 + Idy\n保安利是 x 1\n兄弟襟花 x 7","Check Point":""}
+{"ID":"14","From":"7:45","To":"8:00","Location":"觀塘女家","Description":"拍攝新娘, 姊妹","新郎":"新郎set頭\n派利是給保安\n派利是給化妝師\n拎兄弟襟花 + 花球","新娘":"拍攝新娘, 姊妹","姊妹":"拍攝新娘, 姊妹","兄弟":"[Julius] set頭","Crew":"[攝影] 拍攝新娘, 姊妹\n[化妝] 新郎,兄弟set頭","四大長老":"","Material":"化妝師利是 x 2 + Idy\n保安利是 x 1\n兄弟襟花 x 7","Check Point":""}
 ,
 {"ID":"15","From":"8:00","To":"8:15","Location":"觀塘女家","Description":"新娘穿掛 (姊妹穿下掛 + 女家媽媽穿上掛)","新郎":"","新娘":"穿掛","姊妹":"穿下掛","兄弟":"","Crew":"[攝影] 拍攝穿掛","四大長老":"[女家媽媽] 穿上掛","Material":"掛","Check Point":""}
 ,
@@ -91,7 +91,7 @@
 ,
 {"ID":"46","From":"15:45","To":"16:00","Location":"","Description":"","新郎":"","新娘":"","姊妹":"","兄弟":"","Crew":"","四大長老":"","Material":"","Check Point":""}
 ,
-{"ID":"47","From":"16:00","To":"16:15","Location":"Sheraton","Description":"新娘化妝換衫(迎賓) + 女家媽媽化妝","新郎":"","新娘":"化妝換衫(迎賓) at 新娘房","姊妹":"[All姊妹] 將所有28座物資拎去新娘房\n敬茶物品\n- 敬茶list,\n- 吉祥說話list\n- 跪墊\n- 紙杯\n- 茶葉, 紅棗, 蓮子\n- 托盆\n- label紙\n- 筆\n- 花球\n紅傘\n米\n花車裝飾\n[All姊妹] 準備deco","兄弟":"[All兄弟] 準備deco \n[All兄弟] Bell Desk拎below去新娘房\n- Deco (TBC)\n- 簽到板\n- Pen\n- 利是封 (empty)\n- 人情袋\n- 新郎鞋 \n- 新郎衫 \n- 新娘衫 (迎賓) \n- 新娘衫 (婚紗) \n- 新娘衫 (敬酒) \n- 新娘鞋 \n- 女家媽媽衫 + 耳環\n- 女家媽媽鞋 \n[All兄弟] 準備deco ","Crew":"[化妝] 新娘(迎賓) + 女家媽媽","四大長老":"[女家媽媽] Check-in bedroom suite + 換衫化妝 + 帶MacBook到酒店","Material":"\n新娘衫(迎賓) \n新娘鞋\n女家媽媽衫 + 耳環\n女家媽媽鞋\nMacbook","Check Point":""}
+{"ID":"47","From":"16:00","To":"16:15","Location":"Sheraton","Description":"新娘化妝換衫(迎賓) + 女家媽媽化妝 + 新郎換衫(白色)","新郎":"換衫(白色)+ 換鞋","新娘":"化妝換衫(迎賓) at 新娘房","姊妹":"[All姊妹] 將所有28座物資拎去新娘房\n敬茶物品\n- 敬茶list,\n- 吉祥說話list\n- 跪墊\n- 紙杯\n- 茶葉, 紅棗, 蓮子\n- 托盆\n- label紙\n- 筆\n- 花球\n紅傘\n米\n花車裝飾\n[All姊妹] 準備deco","兄弟":"[All兄弟] 準備deco \n[All兄弟] Bell Desk拎below去新娘房\n- Deco (TBC)\n- 簽到板\n- Pen\n- 利是封 (empty)\n- 人情袋\n- 新郎鞋 \n- 新郎衫 \n- 新娘衫 (迎賓) \n- 新娘衫 (婚紗) \n- 新娘衫 (敬酒) \n- 新娘鞋 \n- 女家媽媽衫 + 耳環\n- 女家媽媽鞋 \n[All兄弟] 準備deco ","Crew":"[化妝] 新娘(迎賓) + 女家媽媽","四大長老":"[女家媽媽] Check-in bedroom suite + 換衫化妝 + 帶MacBook到酒店","Material":"\n新娘衫(迎賓) \n新娘鞋\n女家媽媽衫 + 耳環\n女家媽媽鞋\nMacbook","Check Point":""}
 ,
 {"ID":"48","From":"16:15","To":"16:30","Location":"Sheraton","Description":"司儀團隊到達場地 + 安排crew meal","新郎":"派酒店工作人員利是","新娘":"","姊妹":"","兄弟":"","Crew":"[MC] 達場地 + 安排crew meal","四大長老":"","Material":"酒店工作人員利是 20-30封","Check Point":""}
 ,
@@ -115,7 +115,7 @@
 ,
 {"ID":"58","From":"18:45","To":"19:00","Location":"Sheraton","Description":"","新郎":"","新娘":"","姊妹":"","兄弟":"","Crew":"","四大長老":"","Material":"","Check Point":""}
 ,
-{"ID":"59","From":"19:00","To":"19:15","Location":"Sheraton","Description":"新娘化妝換衫(婚紗) + 新郎換衫","新郎":"換衫+ 換鞋","新娘":"化妝換衫 (婚紗)","姊妹":"[All姊妹 except reception] 叫人入席","兄弟":"[All兄弟 except reception] 叫人入席","Crew":"","四大長老":"[四大長老] 入席","Material":"婚紗\n新郎衫\n新郎鞋","Check Point":""}
+{"ID":"59","From":"19:00","To":"19:15","Location":"Sheraton","Description":"新娘化妝換衫(婚紗)","新郎":"","新娘":"化妝換衫 (婚紗)","姊妹":"[All姊妹 except reception] 叫人入席","兄弟":"[All兄弟 except reception] 叫人入席","Crew":"","四大長老":"[四大長老] 入席","Material":"婚紗\n新郎衫\n新郎鞋","Check Point":""}
 ,
 {"ID":"60","From":"19:15","To":"19:30","Location":"Sheraton","Description":"顏律師到達","新郎":"集合男女家爸爸\n派利是給顏律師\n\nConfirm坐位安排","新娘":"化妝換衫完成 (婚紗)","姊妹":"","兄弟":"[Ivan] Keep 結婚戒指 + 誓詞卡 + 拎結婚證書套, 証件 x4","Crew":"[顏律師] 到達 + 對証件","四大長老":"[男女家爸爸] 對証件","Material":"HKID card of 新郎, 新娘, 男女家爸爸, 新娘,新郎\n結婚證書套\n律師利是 x1","Check Point":""}
 ,
@@ -123,7 +123,7 @@
 ,
 {"ID":"62","From":"19:45","To":"20:00","Location":"Sheraton","Description":"","新郎":"","新娘":"","姊妹":"","兄弟":"","Crew":"","四大長老":"合照","Material":"","Check Point":""}
 ,
-{"ID":"63","From":"20:00","To":"20:15","Location":"Sheraton","Description":"新娘化妝換衫 (敬酒)","新郎":"新郎戴金器","新娘":"化妝換衫 (敬酒)","姊妹":"[Yvonne & Raj] 幫手戴金器","兄弟":"","Crew":"[化妝] 新娘 (敬酒)","四大長老":"","Material":"金器\n新娘衫 (敬酒)","Check Point":""}
+{"ID":"63","From":"20:00","To":"20:15","Location":"Sheraton","Description":"新娘化妝換衫 (敬酒) + 新郎換衫 (藍色)","新郎":"換衫(藍色)+ 換鞋\n新郎戴金器","新娘":"化妝換衫 (敬酒)","姊妹":"[Yvonne & Raj] 幫手戴金器","兄弟":"","Crew":"[化妝] 新娘 (敬酒)","四大長老":"","Material":"金器\n新娘衫 (敬酒)","Check Point":""}
 ,
 {"ID":"64","From":"20:15","To":"20:30","Location":"Sheraton","Description":"","新郎":"","新娘":"化妝換衫完成 (敬酒)","姊妹":"","兄弟":"","Crew":"","四大長老":"","Material":"","Check Point":""}
 ,
