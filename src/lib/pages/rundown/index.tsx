@@ -189,7 +189,8 @@ const Rundown = () => {
     { name: 'Reception', pic: ['Joanna', 'Tony', 'Tommy'] },
     { name: 'Contact', pic: ['Chris'] },
     { name: '戒指', pic: ['Ivan'] },
-    { name: '影片音樂', pic: ['Kenneth', 'Julius'] },
+    { name: '影片音樂', pic: ['Kenneth'] },
+    { name: '影相', pic: ['Julius', 'Yvonne'] },
     { name: '物資', pic: ['Vicx'] },
   ];
 
